@@ -1,5 +1,6 @@
 using System.Data;
 using AirlineBookingSystem_Notifications_Core.Repositories;
+using AirlineBookingSystem_Notifications_Infrastructure.Repositories;
 using Microsoft.Data.SqlClient;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -12,7 +13,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 //Applicaton Services
-builder.Services.AddScoped<INotificationRepository, NotificationaRepository>();
+builder.Services.AddScoped<INotificationRepository, NotificationRepository>();
 //Add Sql Connection
 builder.Services.AddScoped<IDbConnection>(sp =>
 new SqlConnection(builder.Configuration.GetConnectionString("DefaultConnection")));
