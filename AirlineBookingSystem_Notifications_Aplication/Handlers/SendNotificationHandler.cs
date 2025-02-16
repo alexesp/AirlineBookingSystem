@@ -10,7 +10,7 @@ using MediatR;
 
 namespace AirlineBookingSystem_Notifications_Application.Handlers
 {
-    internal class SendNotificationHandler: IRequestHandler<SendNotificationCommand>
+    public class SendNotificationHandler: IRequestHandler<SendNotificationCommand>
     {
         private readonly INotificationService _notificationService;
 

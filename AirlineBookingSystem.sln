@@ -37,7 +37,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AirlineBookingSystem_Flight
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AirlineBookingSystem_Notification_Api", "AirlineBookingSystem_Notification_Api\AirlineBookingSystem_Notification_Api.csproj", "{0682AEF2-42F3-486D-BBF3-109465EF5D4E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AirlineBookingSystem_Notifications_Aplication", "AirlineBookingSystem_Notifications_Aplication\AirlineBookingSystem_Notifications_Aplication.csproj", "{6F87187E-2A37-48F7-BE50-DF76E062D22E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AirlineBookingSystem_Notifications_Application", "AirlineBookingSystem_Notifications_Aplication\AirlineBookingSystem_Notifications_Application.csproj", "{6F87187E-2A37-48F7-BE50-DF76E062D22E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AirlineBookingSystem_Notifications_Core", "AirlineBookingSystem_Notifications_Core\AirlineBookingSystem_Notifications_Core.csproj", "{EBDE4459-271A-4C11-A6C0-CAD587FB0D4E}"
 EndProject

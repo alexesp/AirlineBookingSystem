@@ -13,6 +13,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\AirlineBookingSystem_Notifications_Core\AirlineBookingSystem_Notifications_Core.csproj" />
+    <ProjectReference Include="..\AirlineBookingSystem_Payments_Application\AirlineBookingSystem_Payments_Application.csproj" />
     <ProjectReference Include="..\AirlineBookingSystem_Payments_Core\AirlineBookingSystem_Payments_Core.csproj" />
     <ProjectReference Include="..\AirlineBookingSystem_Payments_Infrastructure\AirlineBookingSystem_Payments_Infrastructure.csproj" />
   </ItemGroup>
