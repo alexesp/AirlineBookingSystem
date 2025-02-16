@@ -1,4 +1,5 @@
 using System.Data;
+using System.Reflection;
 using AirlineBookingSystem_Notifications_Core.Repositories;
 using AirlineBookingSystem_Notifications_Infrastructure.Repositories;
 using Microsoft.Data.SqlClient;
@@ -11,6 +12,17 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+//Register MediatR
+var asseblies = new Assembly[]
+{
+    Assembly.GetExecutingAssembly(),
+   // typeof(SendNotificationHandler).Assembly
+    
+};
+builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(asseblies));
+
+
 
 //Applicaton Services
 builder.Services.AddScoped<INotificationRepository, NotificationRepository>();
